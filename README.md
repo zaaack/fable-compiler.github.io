@@ -46,6 +46,22 @@ Alternatively, you can run the following to run the three processes (Fable, serv
 ```shell
 yarn run start-all
 ```
+## Build API references for Fable.Core
+
+First, you need to clone and **build** Fable compiler in the same directory of this repo, e.g.
+
+```F#
+...
+|- Fable/
+|- fable-compiler.github.io/
+```
+
+Then, run the document generating script `./tools/generate.fsx` via `fsharpi`
+
+```sh
+cd ./fable-compiler.github.io
+fsharpi ./tools/generate.fsx
+```
 
 ## Other repositories
 
